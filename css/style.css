@@ -1,0 +1,350 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 20px; 
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}
+
+/* Main section styling */
+.home-container, .register-container, .login-container, .forum-container, .user-container {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 100px;
+    background-image: url('../images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Home page styling */
+.home-btns-container {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 280px;
+}
+
+.home-container a {
+    width: 8vw;
+    padding: 10px 20px;
+    background-color: rgb(0, 69, 69);
+    color: rgb(255, 255, 255);
+    border: solid 1px white;;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgb(140, 140, 140);
+}
+
+.home-container a:hover {
+    cursor: pointer;
+    opacity: .8;
+    scale: 1.1;
+}
+
+/* login page styling */
+.login-container h2, .register-container h2 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 50px 0 20px 0;
+}
+
+.login-container button, .register-container button {
+    width: 8vw;
+    padding: 10px 20px;
+    background-color: rgb(0, 69, 69);
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.login-container button:hover, .register-container button:hover {
+    cursor: pointer;
+    opacity: .8;
+    scale: 1.1;
+}
+
+/* Register page styling */
+input[type="file"] {
+    background-color: rgb(255, 255, 255);
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
+
+/* Login and register form styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 2px 2px 2px white;
+    border: solid 1px white;
+}
+
+#login-form, #register-form {
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+}
+
+#login-form label, #register-form label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+#login-form input, #register-form input {
+    width: 40vw;
+    height: 40px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 1px solid grey;
+    padding: 10px;
+}
+
+.register-link {
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.form-error {
+    color: red;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Forum styling */
+.forum-container {
+    display: flex;
+}
+
+/* User profile info, User image, user name and logout button */
+.user-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-link {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.user-link:hover  {
+    cursor: pointer;
+    opacity: .8;
+    scale: 1.1;
+}
+
+
+
+.user-area img{
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    border: solid 1px rgb(255, 255, 255) ;
+}
+
+.user-btn {
+    padding: 10px;
+    background-color: rgb(0, 69, 69);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+
+.user-btn:hover  {
+    cursor: pointer;
+    opacity: .8;
+    scale: 1.1;
+}
+
+/* User posts display styling, last 10 user posts  */
+.message-display  {
+    width: 80%;
+    height: 80vh;
+    margin: 20px;
+    padding: 40px;
+    background-color: rgb(0, 0, 0, .9);
+    border: solid rgb(255, 255, 255) 1px;
+    overflow-x: hidden;
+}
+
+.message-display h4, .message-display h6, .message-display p {
+    color: white;
+}
+
+.message-display h1 {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.post {
+    border: grey solid 1px;
+    padding: 20px 20px 40px 20px;
+    margin-bottom: 20px;
+}
+
+.user-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.user-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px; 
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.post-img {
+    float: right;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.post h4 {
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+/* Forum form styling */ 
+.message-posting {
+    text-align: center;
+    background-color: rgb(0, 0, 0, .9);
+    height: 80vh;
+    margin: 20px;
+    padding: 20px;
+    border: solid rgb(255, 255, 255) 1px;
+}
+
+#post-form{
+    width: 100%;
+    margin: auto;
+}
+
+#post-form label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+
+#post-form input {
+    width: 85%;
+    margin-top: 5px;
+    border: none;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 4vh;
+    width: 100vw; 
+    text-align: center;
+    color: white;
+}
+
+.button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(0, 69, 69);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.button:hover, .register-link:hover {
+    cursor: pointer;
+    scale: 1.1;
+    opacity: .8;
+}
+
+

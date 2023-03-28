@@ -1,0 +1,7 @@
+runtime: php81
+
+
+handlers:
+
+- url: /css
+  static_dir: css 
